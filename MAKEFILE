@@ -1,4 +1,4 @@
-# Compilador e Flags exigidas pelo professor
+# Compilador e Flags
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -Isrc
 
@@ -12,6 +12,6 @@ all: $(TARGET)
 $(TARGET): $(SRCS)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
 
-# Regra para limpar o executavel gerado (opcional)
+# Regra para limpar o executavel gerado
 clean:
 	rm -f $(TARGET)
